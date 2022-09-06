@@ -41,13 +41,13 @@ main div{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 200px;
+    height: 500px;
 }
 
 main h1{
     font-size: 4.5rem;
     text-align: left;
-    margin-right: 250px;
+    margin-right: 440px;
 }
 
 input{
