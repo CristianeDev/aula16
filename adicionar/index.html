@@ -25,25 +25,65 @@
 </body>
 <main>
     <section>
-        <div>
-            <h2>Adicionar o seu Super-Herói</h2>
-            <p> Adicione seu personagem favorito completando as informações</p>
-        </div>
-        <div>
-            <form>
-                <label for="Nome">*Nome</label>
-                <input type="text" id="Nome">
-                <label for="Data">Data de Nascimento</label>
-                <input type="Data" id="Data">
-                <label for="Descricao">Descrição</label>
-                <input type="textarea" id="Descricao">
-                <label for="Especie">Espécie</label>
-                <input type="" id="Especie">
-                <label for="adicionarfoto">Adicionar Foto</label>
-                <input type="img" id="adicionarfoto">
+        <form action="./adicionar.txt">
+            <div class="div1">
+                <h2>Adicionar o seu Super-Herói</h2>
+                <p> Adicione seu personagem favorito completando as informações</p>
+            </div>
+            <div class="div2">
+                <div class="name">
+                    <label for="Nome">*Nome</label>
+                    <input id="Nome" type="text" name="Nome" required />
+                </div>
+                <div class="specie">
+                    <label for="Especie">Espécie</label>
+                    <select id="Especie" name="Especie" placeholder="Especie">
+                        <option value="gato">Gato</option>
+                        <option value="lobo">Lobo</option>
+                        <option value="tigre">Tigre</option>
+                    </select>
+                </div>
+            </div>
+            <div class="div3">
+                <div>
+                    <label for="Data"> Data de nacimiento:</label>
+                    <input type="date" id="Data" name="Data" />
 
+                    <label for="adicionarfoto">Adicionar Foto</label>
+                    <input type="file" id="adicionarfoto" name="adicionarfoto">
+                </div>
+            </div>
+            <div class="div4">
 
-            </form>
+                <textarea name="message" id="message" rows="10" cols="30" placeholder="Descrição"> </textarea>
+
+                <div class="alternativas">
+                    <div class="radiobutton">
+                        <p>Tipo de personagem</p>
+                        <label for="Heroi"> Heroi / Heroina </label>
+                        <input type="radio" name="heroi" id="heroi">
+                        <label for="vilao"> Vilão / Vilã </label>
+                        <input type="radio" name="vilao" id="vilao">
+                    </div>
+                    <hr>
+
+                    <div class="poderes">
+                        <p>Poderes</p>
+                        <input type="checkbox" id="poder1" name="poder1" value="Voar">
+                        <label for="Qualidade">Voar</label>
+                        <input type="checkbox" id="poder2" name="poder2" value="Super inteligencia">
+                        <label for="Qualidade2"> Super inteligencia</label>
+                        <input type="checkbox" id="poder3" name="poder3" value="Vista de Raio Laser">
+                        <label for="Qualidade3"> Vista de Raio Laser</label>
+                        <input type="checkbox" id="poder4" name="poder4" value="Super Rico">
+                        <label for="Qualidade4"> Super Rico</label><br>
+                    </div>
+                </div>
+            </div>
+            <div class="button">
+                <button id="adicionar" type="submit">Adicionar</button>
+            </div>
+        </form>
         </div>
     </section>
 
