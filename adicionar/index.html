@@ -13,7 +13,7 @@
     <div class="bar-discount">Desconto de 20% em todos os produtos!</div>
     <header>
         <img src="../img/logo.png" alt="logo">
-        <h1><a href="./index.html">DH&Ecommerce</a></h1>
+        <h1><a href="../index.html">DH&Ecommerce</a></h1>
     </header>
     <nav>
         <ul>
@@ -25,68 +25,57 @@
 </body>
 <main>
     <section>
+<!--TITULO DA SECTION-->
+        <div class="div1">
+            <h2>Adicionar o seu Super-Herói</h2>
+            <p> Adicione seu personagem favorito completando as informações</p>
+        </div>
+<!--FORMULÁRIO EM FLEX WRAP-->
         <form action="./adicionar.txt">
-            <div class="div1">
-                <h2>Adicionar o seu Super-Herói</h2>
-                <p> Adicione seu personagem favorito completando as informações</p>
-            </div>
-            <div class="div2">
-                <div class="name">
                     <label for="Nome">*Nome</label>
                     <input id="Nome" type="text" name="Nome" required />
-                </div>
-                <div class="specie">
-                    <label for="Especie">Espécie</label>
-                    <select id="Especie" name="Especie" placeholder="Especie">
-                        <option value="gato">Gato</option>
-                        <option value="lobo">Lobo</option>
-                        <option value="tigre">Tigre</option>
-                    </select>
-                </div>
-            </div>
-            <div class="div3">
-                <div>
+
                     <label for="Data"> Data de nacimiento:</label>
                     <input type="date" id="Data" name="Data" />
 
-                    <label for="adicionarfoto">Adicionar Foto</label>
-                    <input type="file" id="adicionarfoto" name="adicionarfoto">
-                </div>
-            </div>
-            <div class="div4">
-
                 <textarea name="message" id="message" rows="10" cols="30" placeholder="Descrição"> </textarea>
 
-                <div class="alternativas">
-                    <div class="radiobutton">
-                        <p>Tipo de personagem</p>
-                        <label for="Heroi"> Heroi / Heroina </label>
-                        <input type="radio" name="heroi" id="heroi">
-                        <label for="vilao"> Vilão / Vilã </label>
-                        <input type="radio" name="vilao" id="vilao">
-                    </div>
-                    <hr>
+                <label for="Especie">Espécie</label>
+                <select id="Especie" name="Especie" placeholder="Especie">
+                    <option value="gato">Gato</option>
+                    <option value="lobo">Lobo</option>
+                    <option value="tigre">Tigre</option>
+                </select>
 
+                <label for="adicionarfoto">Adicionar Foto</label>
+                <input type="file" id="adicionarfoto" name="adicionarfoto">
+
+                <div class="alternativas">
                     <div class="poderes">
                         <p>Poderes</p>
                         <input type="checkbox" id="poder1" name="poder1" value="Voar">
-                        <label for="Qualidade">Voar</label>
+                        <label for="Qualidade">Voar</label><br>
                         <input type="checkbox" id="poder2" name="poder2" value="Super inteligencia">
-                        <label for="Qualidade2"> Super inteligencia</label>
+                        <label for="Qualidade2"> Super inteligencia</label><br>
                         <input type="checkbox" id="poder3" name="poder3" value="Vista de Raio Laser">
-                        <label for="Qualidade3"> Vista de Raio Laser</label>
+                        <label for="Qualidade3"> Vista de Raio Laser</label><br>
                         <input type="checkbox" id="poder4" name="poder4" value="Super Rico">
                         <label for="Qualidade4"> Super Rico</label><br>
                     </div>
+                    <div class="radiobutton">
+                            <p>Tipo de personagem</p><br>
+                            <input type="radio" name="heroi" id="heroi">
+                            <label for="Heroi"> Heroi / Heroina </label>
+                            <br><input type="radio" name="vilao" id="vilao">
+                            <label for="vilao"> Vilão / Vilã </label>
+                    </div>
                 </div>
-            </div>
-            <div class="button">
-                <button id="adicionar" type="submit">Adicionar</button>
-            </div>
-        </form>
+        </form> 
+        <div class="button">
+            <button id="adicionar" type="submit">Adicionar</button>
         </div>
     </section>
 
 </main>
-
+<footer> Todos os direitos reservados a Mesa 02 da Atividade 16 de Front-end I</footer>
 </html>
